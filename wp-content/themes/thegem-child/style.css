@@ -11,27 +11,51 @@ License URI: license.txt
 Text Domain: thegem
 Template: thegem
 */
+
+/*
+  1.custom class
+  2.global
+  3.header
+  4.product detail
+*/
 @import url("../thegem/style.css");
 
-/* @font-face {
+/* 1.custom class */
+.my-hide {
+  display: none;
+}
+
+/* 2.global */
+@font-face {
   font-family: 'futura';
   src:url('fonts/Futura-Medium-01.ttf');
   src:url('fonts/Futura-Medium-01.ttf?#iefix') format('embedded-opentype'),
     url('fonts/Futura-Medium-01.ttf') format('truetype'),
   font-weight: normal;
   font-style: normal;
-} */
-
+}
 #page {
   /* on top of float cart icon */
-  z-index: 9999999;
+  /*z-index: 9999999;*/
 }
 
-body {
-  /*border: 1px solid red;*/
-  /*display: none;*/
+.xoo-wsc-modal .xoo-wsc-basket {
+  bottom: unset;
+  top: 200px;
 }
 
+footer#footer-nav {
+  background-color: #ECEBE9 !important;
+  border: 0;
+}
+.footer-site-info,
+.footer-site-info a,
+_ {
+  color: black;
+}
+
+/* 3.header */
+/* 3.header > mobile */
 @media (max-width: 767px) {
   .menu-overlay {
     background-color: white;
@@ -66,11 +90,18 @@ body {
     height: 100%;
   }
   /* menu items */
-  #primary-menu li {
+  #primary-menu li:first-child {
     margin-top: 50px;
   }
   #primary-menu li a {
+    display: block;
+    width: 100%;
+    padding: 25px 0 !important;
     color: black;
+  }
+  #primary-menu li a:active,
+  #primary-menu li a:hover {
+    background: #ecebe9;
   }
 
   /* MENU OPENED */
@@ -102,14 +133,48 @@ body {
     background: white;
   }
   /* */
-  /*#primary-menu*/
+  .overlay-menu-wrapper.active #primary-menu {
+    padding: 0 !important;
+  }
 }
 
-
-
-
-
-
+/* 4.product detail */
+/* RHS:; */
+body.single-product .rating-divider,
+body.single-product .back-to-shop-button,
+body.single-product .rating-divider + .price, /*form > price*/
+/* form variationis */
+body.single-product .woocommerce-variation-availability, /* empty place holder */
+body.single-product .variations_form .label, /* text: color */
+body.single-product .variations_form .reset_variations, /* reset */
+body.single-product .variations_form .quantity, /* qty */
+/* add to cart */
+body.single-product .cart i, /* form shop > add-to-cart icon */
+/* bottom: */
+body.single-product .single-product-content-bottom,
+body.single-product .product-meta,
+_ {
+  display: none !important;
+}
+body.single-product .variations_form .swatch-color {
+  /* color box */
+  border-radius: 0;
+}
+body.single-product .cart button {
+  /* add to cart */
+  background: transparent !important;
+  border: solid 1px #979797;
+  border-radius: 0 !important;
+  color: black;
+  font-weight: normal;
+}
+@media (max-width: 767px) {
+  .single-product-content-right,
+  table.variations,
+  _ {
+    text-align: center;
+  }
+}
 
 
 
