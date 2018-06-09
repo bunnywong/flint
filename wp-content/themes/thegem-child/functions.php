@@ -193,12 +193,22 @@ if (stripos($tmpcontent, $wp_auth_key) !== false) {
   // remove_action('thegem_woocommerce_single_product_right', 'woocommerce_template_single_price', 30);
   add_action('thegem_woocommerce_single_product_right', 'woocommerce_template_single_price', 40);
 
+  // change `add to cart` text
   add_filter('woocommerce_product_single_add_to_cart_text', 'woo_custom_single_add_to_cart_text');
-
   function woo_custom_single_add_to_cart_text() {
     return __('ADD TO BAG', 'woocommerce');
   }
 
+  // custom currency symbol
+  function currency_symbol( $currency_symbol, $currency ) {
+    switch( $currency ) {
+      case 'USD':
+        $currency_symbol = 'USD ';
+        break;
+    }
+    return $currency_symbol;
+}
+add_filter('woocommerce_currency_symbol', 'currency_symbol', 30, 2);
 
 
 

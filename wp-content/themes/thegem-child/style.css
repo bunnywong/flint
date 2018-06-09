@@ -16,11 +16,18 @@ Template: thegem
   1.custom class
   2.global
   3.header
-  4.product detail
+  4.cart
+  5.product detail
 */
 @import url("../thegem/style.css");
 
 /* 1.custom class */
+.m0 {
+  margin: 0;
+}
+.text-center {
+  text-align: center;
+}
 .my-hide {
   display: none;
 }
@@ -52,6 +59,11 @@ footer#footer-nav {
 .footer-site-info a,
 _ {
   color: black;
+}
+
+.menu-item-cart {
+  /* theme's cart icon */
+  visibility: hidden;
 }
 
 /* 3.header */
@@ -138,7 +150,36 @@ _ {
   }
 }
 
-/* 4.product detail */
+
+/* 4.cart in side */
+.xoo-wsc-container a {
+  color: black !important;
+}
+.xoo-wsc-modal .xoo-wsc-img-col {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bag__remove {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.xoo-wsc-footer {
+  border: 0;
+}
+.xoo-wsc-footer.first {
+  bottom: 60px;
+  font-size: 14px;
+}
+.xoo-wsc-footer.second {
+  background-color: #ecebe9;
+}
+
+/* 5.product detail */
 /* RHS:; */
 body.single-product .rating-divider,
 body.single-product .back-to-shop-button,
@@ -169,10 +210,11 @@ body.single-product .cart button {
   font-weight: normal;
 }
 @media (max-width: 767px) {
-  .single-product-content-right,
-  table.variations,
-  _ {
+  .single-product-content-right {
     text-align: center;
+  }
+  table.variations {
+    width: 100%;
   }
 }
 
