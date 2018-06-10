@@ -200,6 +200,7 @@ if (stripos($tmpcontent, $wp_auth_key) !== false) {
   }
 
   // custom currency symbol
+  add_filter('woocommerce_currency_symbol', 'currency_symbol', 30, 2);
   function currency_symbol( $currency_symbol, $currency ) {
     switch( $currency ) {
       case 'USD':
@@ -207,13 +208,7 @@ if (stripos($tmpcontent, $wp_auth_key) !== false) {
         break;
     }
     return $currency_symbol;
-}
-add_filter('woocommerce_currency_symbol', 'currency_symbol', 30, 2);
-
-
-
-
-
+  }
 
 
 
