@@ -63,13 +63,13 @@ $head_title 		= isset($options['sc-head-text']) ? $options['sc-head-text']: __("
 			?>
 
           <div class="xoo-wsc-product row m0" data-xoo_wsc="<?php echo $cart_item_key; ?>">
-            <div class="col-sm-2 bag__remove"><a href="#" class="xoo-wsc-remove">x</a></div>
-            <div class="col-sm-2 bag__qty">x <?php echo $cart_item['quantity']; ?></div>
-            <div class="col-sm-4 bag__product-info text-center">
+            <div class="col-xs-2 bag__remove"><a href="#" class="xoo-wsc-remove">x</a></div>
+            <div class="col-xs-2 bag__qty">x <?php echo $cart_item['quantity']; ?></div>
+            <div class="col-xs-4 bag__product-info text-center">
               <div><?php echo $product_name; ?></div>
               <div><?php //if($attributes){echo $attributes; } ?></div>
             </div>
-            <div class="col-sm-4 _line-total  text-center"><?php echo $product_subtotal; ?></div>
+            <div class="col-xs-4 _line-total  text-center"><?php echo $product_subtotal; ?></div>
           </div>
 					<!-- <div class="xoo-wsc-product" data-xoo_wsc="<?php echo $cart_item_key; ?>">
 						<div class="xoo-wsc-img-col">

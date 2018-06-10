@@ -152,6 +152,9 @@ _ {
 
 
 /* 4.cart in side */
+.xoo-wsc-container {
+  max-width: 100%;
+}
 .xoo-wsc-container a {
   color: black !important;
 }
