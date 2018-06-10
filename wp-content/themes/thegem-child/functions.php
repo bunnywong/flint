@@ -210,6 +210,16 @@ if (stripos($tmpcontent, $wp_auth_key) !== false) {
     return $currency_symbol;
   }
 
+  // custom text in chceckout
+  add_filter( 'gettext', 'custom_paypal_button_text', 20, 3 );
+  function custom_paypal_button_text( $translated_text, $text, $domain ) {
+    switch ( $translated_text ) {
+      case 'Proceed to PayPal' :
+        $translated_text = __( 'PLACE ORDER', 'woocommerce' );
+        break;
+    }
+    return $translated_text;
+  }
 
 
 

@@ -23,7 +23,7 @@ Template: thegem
 @import url("../thegem/style.css");
 
 /* 1.custom class */
-.upper-case {
+.text-uppercase {
   text-transform: uppercase;
 }
 .m0 {
@@ -37,14 +37,14 @@ Template: thegem
 }
 
 /* 2.global */
-  @font-face {
+  /*@font-face {
     font-family: 'futura';
     src:url('fonts/Futura-Medium-01.ttf');
     src:url('fonts/Futura-Medium-01.ttf?#iefix') format('embedded-opentype'),
       url('fonts/Futura-Medium-01.ttf') format('truetype'),
     font-weight: normal;
     font-style: normal;
-  }
+  }*/
   #page {
     /* on top of float cart icon */
     /*z-index: 9999999;*/
@@ -238,17 +238,22 @@ Template: thegem
   body.woocommerce-checkout .woocommerce-checkout-review-order-table > thead,
   body.woocommerce-checkout .woocommerce-checkout-review-order-table > tbody,
     /* paypal */
-  body.woocommerce-checkout .wc_payment_method label,
+  /*body.woocommerce-checkout .wc_payment_method label,*/
   body.woocommerce-checkout .wc_payment_method label img,
   body.woocommerce-checkout .payment_box.payment_method_paypal, /* tips */
+  body.woocommerce-checkout .checkout-place-order button::before, /* Proceed to PayPal */
   _ {
     display: none;
+  }
+  body.woocommerce-checkout .woocommerce {
+    margin-top: 0;
   }
   /* sub title */
   body.woocommerce-checkout .woocommerce-billing-fields h2 {
     padding: 0;
   }
   body.woocommerce-checkout .woocommerce-billing-fields h2::after {
+    /* custom section title: 1 */
     content: "CONTACT DETAILS";
     display: block;
     font-size: 16px;
@@ -256,17 +261,10 @@ Template: thegem
     font-weight: normal;
   }
   body.woocommerce-checkout .before-title-address::before {
+    /* custom section title: 2 */
     content: "SHIPPING ADDRESS DETAILS";
     display: block;
     margin: 88px 0 30px 0;
-  }
-  @media (max-width: 767px) {
-    body.woocommerce-checkout .woocommerce-billing-fields h2::after,
-    body.woocommerce-checkout .before-title-address::before {
-      margin: 0px -21px;
-      padding: 20px;
-      background: #ECEBE9;
-    }
   }
   body.woocommerce-checkout input[type="text"],
   body.woocommerce-checkout input[type="email"],
@@ -283,24 +281,37 @@ Template: thegem
   body.woocommerce-checkout #order_review {
     border: 1px solid #979797;
   }
+  /* calc */
   body.woocommerce-checkout table.woocommerce-checkout-payment-total th,
   body.woocommerce-checkout table.woocommerce-checkout-payment-total td,
   body.woocommerce-checkout .wc_payment_method.payment_method_paypal,
   _ {
     border: 0 !important;
   }
+  /* sub total */
   body.woocommerce-checkout .woocommerce-checkout-one-page #order_review > table .order-total th,
   body.woocommerce-checkout .woocommerce-checkout-one-page #order_review > table .order-total td {
     border-bottom: 1px solid #979797 !important;
   }
-  /* custom paypal */
+  /* custom paypal radio + logo */
   body.woocommerce-checkout .wc_payment_method.payment_method_paypal::before {
     content: "";
     display: block;
-    border: 1px solid red;
     width: 200px;
     height: 50px;
     position: absolute;
+    border: 1px solid red; /* @TODO */
+  }
+  /* text: Proceed to PayPal */
+  body.woocommerce-checkout  .checkout-place-order button {
+    color: black;
+    background-color: transparent;
+    font-weight: normal;
+    padding: 10px 20px;
+    line-height: normal;
+    border: solid 1px #979797;
+    border-radius: 0 !important;
+    font-size: 16px;
   }
 
   /* underline at form bottom */
@@ -308,8 +319,55 @@ Template: thegem
     display: none;
   }
 
-
-
+  @media (max-width: 767px) {
+    body.woocommerce-checkout .woocommerce-checkout-review-order-table,
+    body.woocommerce-checkout footer#footer-nav,
+    _ {
+      display: none;
+    }
+    body.woocommerce-checkout .block-content {
+      padding: 0 0 85px;
+    }
+    body.woocommerce-checkout #order_review {
+      border: 0;
+    }
+    .checkout__first-name,
+    .checkout__last-name {
+      width: 100% !important;
+    }
+    body.woocommerce-checkout .woocommerce-billing-fields h2::after,
+    body.woocommerce-checkout .before-title-address::before,
+    body.woocommerce-checkout form.woocommerce-checkout .checkout-contents:last-child::before,
+    _ {
+      /* custom section title: 1 & 2 */
+      margin: 38px -21px;
+      padding: 20px;
+      background: #ECEBE9;
+      display: block;
+    }
+    body.woocommerce-checkout form.woocommerce-checkout .checkout-contents:last-child::before {
+      /* custom section title: payment methold */
+      content: "PAYMENT METHOD";
+      margin-top: 0;
+    }
+    /* paypal wrapper */
+    body.woocommerce-checkout .woocommerce-checkout-one-page #order_review {
+      padding: 0;
+    }
+    body.woocommerce-checkout form.woocommerce-checkout .checkout-contents:last-child {
+      margin-top: 0;
+    }
+    body.woocommerce-checkout .checkout-place-order button {
+      height: auto;
+      width: calc(100% + 42px);
+      margin-left: -21px !important;
+      left: 0;
+      position: absolute;
+      background-color: #ECEBE9;
+      border: 0;
+      padding: 45px 0;
+    }
+  }
 
 
 
