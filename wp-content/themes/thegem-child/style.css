@@ -37,17 +37,17 @@ Template: thegem
 }
 
 /* 2.global */
-  /*@font-face {
-    font-family: 'futura';
-    src:url('fonts/Futura-Medium-01.ttf');
-    src:url('fonts/Futura-Medium-01.ttf?#iefix') format('embedded-opentype'),
-      url('fonts/Futura-Medium-01.ttf') format('truetype'),
-    font-weight: normal;
-    font-style: normal;
-  }*/
+  @font-face {
+    font-family: FuturaPTBook;
+    src: url("./fonts/FuturaPTBook.otf") format("opentype");
+  }
+  body {
+    /* ***0 */
+    font-family: 'FuturaPTBook', Fallback, sans-serif !important;
+  }
   #page {
     /* on top of float cart icon */
-    /*z-index: 9999999;*/
+    z-index: 9999999;
   }
 
   .xoo-wsc-modal .xoo-wsc-basket {
@@ -250,6 +250,7 @@ Template: thegem
   }
   /* sub title */
   body.woocommerce-checkout .woocommerce-billing-fields h2 {
+    font-family: 'FuturaPTBook', Fallback, sans-serif;
     padding: 0;
   }
   body.woocommerce-checkout .woocommerce-billing-fields h2::after {
@@ -340,6 +341,7 @@ Template: thegem
     body.woocommerce-checkout form.woocommerce-checkout .checkout-contents:last-child::before,
     _ {
       /* custom section title: 1 & 2 */
+      font-family: 'FuturaPTBook', Fallback, sans-serif;
       margin: 38px -21px;
       padding: 20px;
       background: #ECEBE9;
@@ -358,6 +360,7 @@ Template: thegem
       margin-top: 0;
     }
     body.woocommerce-checkout .checkout-place-order button {
+      font-family: 'FuturaPTBook', Fallback, sans-serif;
       height: auto;
       width: calc(100% + 42px);
       margin-left: -21px !important;
