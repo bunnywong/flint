@@ -41,13 +41,64 @@ Template: thegem
     font-family: FuturaPTBook;
     src: url("./fonts/FuturaPTBook.otf") format("opentype");
   }
-  body {
-    /* ***0 */
+  /* global font family [ .GF ] */
+  body,
+  #primary-menu.no-responsive > li > a,
+  body.home h2,
+  body.single-product h3,
+  body.single-product .woocommerce-Price-amount,
+  body.woocommerce-checkout .woocommerce-checkout-one-page #order_review table tbody th,
+  body.woocommerce-checkout .woocommerce-checkout-one-page #order_review table tbody td,
+  body.woocommerce-checkout .woocommerce .woocommerce-checkout .shop_table.woocommerce-checkout-payment-total .cart-subtotal td .amount,
+  body.woocommerce-checkout .woocommerce .woocommerce-checkout.woocommerce-checkout-one-page .shop_table.woocommerce-checkout-payment-total .order-total td .amount,
+  body.woocommerce-checkout  .checkout-place-order button,
+  _ {
     font-family: 'FuturaPTBook', Fallback, sans-serif !important;
+  }
+  /* global color [ .GC ] */
+  .footer-site-info,
+  .footer-site-info a,
+  #primary-menu li a,
+  footer .footer-widget-area ul li a,
+  footer .footer-widget-area ul li a:hover,
+  .xoo-wsc-modal,
+  .xoo-wsc-modal a,
+  body.home,
+  body.home h2,
+  body.single-product .woocommerce-product-details__short-description,
+  body.single-product .cart button,
+  body.woocommerce-checkout,
+  body.woocommerce-checkout .checkout-place-order button,
+  body.woocommerce-checkout .woocommerce-checkout-one-page #order_review table tbody th,
+  body.woocommerce-checkout .woocommerce-checkout-one-page #order_review table tbody td,
+  body.woocommerce-checkout .woocommerce .woocommerce-checkout .shop_table.woocommerce-checkout-payment-total .cart-subtotal td .amount,
+  body.woocommerce-checkout .woocommerce .woocommerce-checkout.woocommerce-checkout-one-page .shop_table.woocommerce-checkout-payment-total .order-total td .amount,
+  _ {
+    color: black;
+  }
+  /* global hidden [ .GH ]*/
+  body #page-title,
+  #primary-menu.no-responsive > li > a::before, /* icon in desktop menu */
+  footer .footer-widget-area ul li::before, /* Footer widget */
+  _ {
+    display: none;
+  }
+  @media (max-width: 767px) {
+    body footer {
+      display: none;
+    }
   }
   #page {
     /* on top of float cart icon */
-    z-index: 9999999;
+    /*z-index: 9999999;*/
+  }
+  #primary-menu li {
+    /* @TODO */
+    /*min-width: 200px !important;*/
+  }
+  #primary-menu li a {
+    /* menu */
+    text-align: center;
   }
 
   .xoo-wsc-modal .xoo-wsc-basket {
@@ -59,15 +110,17 @@ Template: thegem
     background-color: #ECEBE9 !important;
     border: 0;
   }
-  .footer-site-info,
-  .footer-site-info a,
-  _ {
-    color: black;
-  }
 
   .menu-item-cart {
     /* theme's cart icon */
     visibility: hidden;
+  }
+
+  footer .footer-widget-area ul li {
+    border: 0 !important;
+  }
+  footer .footer-widget-area ul li a:hover {
+    text-decoration: underline;
   }
 
 /* 3.header */
@@ -113,7 +166,6 @@ Template: thegem
       display: block;
       width: 100%;
       padding: 25px 0 !important;
-      color: black;
     }
     #primary-menu li a:active,
     #primary-menu li a:hover {
@@ -159,9 +211,6 @@ Template: thegem
   .xoo-wsc-container {
     max-width: 100%;
   }
-  .xoo-wsc-container a {
-    color: black !important;
-  }
   .xoo-wsc-modal .xoo-wsc-img-col {
     width: 80px;
     height: 80px;
@@ -179,14 +228,18 @@ Template: thegem
     border: 0;
   }
   .xoo-wsc-footer.first {
-    bottom: 60px;
+    bottom: 70px;
     font-size: 14px;
+    margin-bottom: 20px;
   }
   .xoo-wsc-footer.second {
     background-color: #ecebe9;
   }
+  .xoo-wsc-footer a {
+    padding: 15px 0;
+  }
 
-/* 5.product detail */
+/* 5.product detail [ .PD ] */
   /* RHS: */
   body.single-product .rating-divider,
   body.single-product .back-to-shop-button,
@@ -201,8 +254,13 @@ Template: thegem
   /* bottom: */
   body.single-product .single-product-content-bottom,
   body.single-product .product-meta,
+  body.single-product footer#footer-nav,
   _ {
     display: none !important;
+  }
+  body.single-product .woocommerce-Price-amount {
+    font-size: 16px;
+    /*font-weight: 400;*/
   }
   body.single-product .variations_form .swatch-color {
     /* color box */
@@ -213,7 +271,6 @@ Template: thegem
     background: transparent !important;
     border: solid 1px #979797;
     border-radius: 0 !important;
-    color: black;
     font-weight: normal;
   }
   @media (max-width: 767px) {
@@ -226,7 +283,6 @@ Template: thegem
   }
 
 /* 6.checkout */
-  body.woocommerce-checkout #page-title,
   /* LHS
     /* sub title */
   body.woocommerce-checkout .woocommerce-billing-fields h2::before,
@@ -291,8 +347,14 @@ Template: thegem
   }
   /* sub total */
   body.woocommerce-checkout .woocommerce-checkout-one-page #order_review > table .order-total th,
-  body.woocommerce-checkout .woocommerce-checkout-one-page #order_review > table .order-total td {
+  body.woocommerce-checkout .woocommerce-checkout-one-page #order_review > table .order-total td,
+  _ {
     border-bottom: 1px solid #979797 !important;
+  }
+  body.woocommerce-checkout .woocommerce .woocommerce-checkout .shop_table.woocommerce-checkout-payment-total .cart-subtotal td .amount,
+  body.woocommerce-checkout .woocommerce .woocommerce-checkout.woocommerce-checkout-one-page .shop_table.woocommerce-checkout-payment-total .order-total td .amount,
+  _ {
+    font-size: 16px;
   }
   /* custom paypal radio + logo */
   body.woocommerce-checkout .wc_payment_method.payment_method_paypal::before {
@@ -305,7 +367,6 @@ Template: thegem
   }
   /* text: Proceed to PayPal */
   body.woocommerce-checkout  .checkout-place-order button {
-    color: black;
     background-color: transparent;
     font-weight: normal;
     padding: 10px 20px;
@@ -371,7 +432,45 @@ Template: thegem
       padding: 45px 0;
     }
   }
+/* 7.home */
+@media (max-width: 767px) {
+  body.home {
+    text-align: center;
+  }
+  body.home .block-content {
+    padding: 0;
+  }
+    /* inline 2 image */
+  body.home .img-wrapper {
+    display: inline-block;
+    position: relative;
+  }
+  body.home .img-wrapper img.left + br {
+    display: none;
+  }
+  body.home .img-wrapper img.left {
+    left: 0;
+    bottom: 43px;
+    max-width: 40px;
+    float: left;
+    position: absolute;
+  }
+  body.home .img-wrapper img.right {
+    max-width: calc(100% - 80px);
+    float: right;
+    /*right: 0;*/
+  }
 
+  body.home .wrapper img {
+    max-width: 100%
+  }
+  body.home .wrapper h2 {
+    margin-top: 110px !important;
+  }
+  body.home .wrapper p {
+    margin-bottom: 110px !important;
+  }
+}
 
 
 
