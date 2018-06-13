@@ -7,4 +7,8 @@ jQuery(document).ready(function ($) {
     console.log('hide menu');
     $('body').removeClass('fixed')
   })
+
+  $('.js-scroll-to-top').on('click', function () {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+  })
 })
