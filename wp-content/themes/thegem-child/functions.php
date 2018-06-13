@@ -13,7 +13,6 @@
   add_action( 'wp_enqueue_scripts', 'thegem_child_enqueue_js', 6);
 
   // add price tag below short descriptioin in Product detail page
-  // remove_action('thegem_woocommerce_single_product_right', 'woocommerce_template_single_price', 30);
   add_action('thegem_woocommerce_single_product_right', 'woocommerce_template_single_price', 40);
 
   // change `add to cart` text
@@ -23,8 +22,8 @@
   }
 
   // custom currency symbol
-  add_filter('woocommerce_currency_symbol', 'currency_symbol', 30, 2);
-  function currency_symbol( $currency_symbol, $currency ) {
+  add_filter('woocommerce_currency_symbol', 'thegem_child_currency_symbol', 30, 2);
+  function thegem_child_currency_symbol( $currency_symbol, $currency ) {
     switch( $currency ) {
       case 'USD':
         $currency_symbol = 'USD ';
@@ -34,8 +33,8 @@
   }
 
   // custom text in chceckout
-  add_filter( 'gettext', 'custom_paypal_button_text', 20, 3 );
-  function custom_paypal_button_text( $translated_text, $text, $domain ) {
+  add_filter( 'gettext', 'thegem_child_paypal_button_text', 20, 3 );
+  function thegem_child_paypal_button_text( $translated_text, $text, $domain ) {
     switch ( $translated_text ) {
       case 'Proceed to PayPal' :
         $translated_text = __( 'PLACE ORDER', 'woocommerce' );
