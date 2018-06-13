@@ -35,6 +35,9 @@ Template: thegem
   .my-hide {
     display: none;
   }
+  .fixed {
+    overflow: hidden !important;
+  }
 
   /* 2.global */
     @font-face {
@@ -88,10 +91,6 @@ Template: thegem
         display: none;
       }
     }
-    #page {
-      /* on top of float cart icon */
-      /*z-index: 9999999;*/
-    }
     #primary-menu li {
       /* @TODO */
       /*min-width: 200px !important;*/
@@ -100,7 +99,9 @@ Template: thegem
       /* menu */
       text-align: center;
     }
-
+    body.fixed .xoo-wsc-modal {
+      display: none;
+    }
     .xoo-wsc-modal .xoo-wsc-basket {
       bottom: unset;
       top: 200px;

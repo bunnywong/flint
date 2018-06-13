@@ -1,10 +1,16 @@
 <?php
   // enqueue the child theme stylesheet
-  function wp_schools_enqueue_scripts() {
+  function thegem_child_enqueue_css() {
     wp_register_style( 'childstyle', get_stylesheet_directory_uri() . '/style.css'  );
     wp_enqueue_style( 'childstyle' );
   }
-  add_action( 'wp_enqueue_scripts', 'wp_schools_enqueue_scripts', 11);
+  add_action( 'wp_enqueue_scripts', 'thegem_child_enqueue_css', 11);
+
+  function thegem_child_enqueue_js() {
+    wp_enqueue_script('child_js', get_stylesheet_directory_uri() . '/custom.js', array('jquery'), false, true);
+    wp_enqueue_style( 'childstyle' );
+  }
+  add_action( 'wp_enqueue_scripts', 'thegem_child_enqueue_js', 6);
 
   // add price tag below short descriptioin in Product detail page
   // remove_action('thegem_woocommerce_single_product_right', 'woocommerce_template_single_price', 30);
