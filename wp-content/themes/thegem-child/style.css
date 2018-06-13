@@ -532,7 +532,9 @@ Template: thegem
 
   }
   @media (max-width: 767px) {
-    body.home .desktop {
+    body.home .desktop,
+    body.home .ls-direction-fix,
+    _ {
       display: none !important;
     }
       /* inline 2 image */
