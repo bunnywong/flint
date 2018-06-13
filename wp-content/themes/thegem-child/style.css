@@ -116,19 +116,10 @@ Template: thegem
     body.fixed .xoo-wsc-modal {
       display: none;
     }
-    .xoo-wsc-modal .xoo-wsc-basket {
-      bottom: unset;
-      top: 200px;
-    }
 
     footer#footer-nav {
       background-color: #ECEBE9 !important;
       border: 0;
-    }
-
-    .menu-item-cart {
-      /* theme's cart icon */
-      visibility: hidden;
     }
     .custom-html-widget {
       text-align: right;
@@ -255,7 +246,47 @@ Template: thegem
       }*/
     }
 
-  /* 4.cart in side */
+  /* 4.cart in side [ :CART ] */
+    /* float cart */
+    @media (min-width: 769px) {
+      .xoo-wsc-modal .xoo-wsc-basket {
+        bottom: unset;
+        top: 200px;
+        right: 95px;
+      }
+    }
+    @media (max-width: 769px) {
+      .xoo-wsc-modal .xoo-wsc-basket {
+        padding: 0;
+        bottom: unset;
+        top: 0;
+      }
+
+    }
+    .menu-item-cart {
+      /* theme's cart icon */
+      visibility: hidden;
+    }
+    .xoo-wsc-basket {
+      box-shadow: none;
+      background-color: transparent;
+    }
+    .xoo-wsc-items-count {
+      /*@TODO: hide it when dev done*/
+      display: none;
+    }
+    .xoo-wsc-bki::before {
+      content: "";
+      display: block;
+      background-image: url('/wp-content/uploads/2018/06/mobile_shopping_bag.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 36px;
+      width: 26px;
+      height: 46px;
+      height: 36px;
+    }
+    /* cart list */
     .xoo-wsc-container {
       max-width: 100%;
     }
