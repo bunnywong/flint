@@ -303,6 +303,15 @@ Template: thegem
 
   /* 4.cart in side [ :CART ] */
     /* float cart */
+    .xoo-wsc-close::before {
+      content: "";
+      display: block;
+      background-image: url(/wp-content/uploads/2018/06/mobile_close_icon.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 16px;
+      height: 16px;
+    }
     @media (min-width: 769px) {
       /* float cart */
       .xoo-wsc-modal .xoo-wsc-basket {
@@ -310,15 +319,6 @@ Template: thegem
         top: 120px;
         right: 125px;
         padding: 0;
-      }
-      .xoo-wsc-close::before {
-        content: "";
-        display: block;
-        background-image: url(/wp-content/uploads/2018/06/mobile_close_icon.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        width: 16px;
-        height: 16px;
       }
       /* slide cart */
       .bag__remove a,
@@ -458,7 +458,6 @@ Template: thegem
 
     }
     body.single-product h3.product_title {
-      margin-top: 287px;
       color: black;
       font-size: 14px;
     }
@@ -480,6 +479,11 @@ Template: thegem
       border-radius: 0 !important;
       font-weight: normal;
       padding: 0 40px;
+    }
+    @media (min-width: 768px) {
+      body.single-product h3.product_title {
+        margin-top: 287px;
+      }
     }
     @media (max-width: 767px) {
       .single-product-content-right {
