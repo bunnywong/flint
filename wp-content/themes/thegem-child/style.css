@@ -116,9 +116,10 @@ Template: thegem
     /* global hidden [ .GH ]*/
     body #page-title,
     #primary-menu.no-responsive > li > a::before, /* icon in desktop menu */
+    .xoo-wsc-footer-a, /* cart list line */
     body.single-product .cart button + a,
     body.single-product .fancy-gallery::before,
-    .xoo-wsc-footer-a, /* cart list line */
+    .fancybox-toolbar,
     footer .custom-html-widget ul li::before, /* Footer widget */
     _ {
       display: none !important;
@@ -304,7 +305,7 @@ Template: thegem
       /* float cart */
       .xoo-wsc-modal .xoo-wsc-basket {
         bottom: unset;
-        top: 80px;
+        top: 120px;
         right: 125px;
         padding: 0;
       }
@@ -365,6 +366,10 @@ Template: thegem
     .xoo-wsc-header,
     .xoo-wsc-product {
       border-bottom: none;
+    }
+    .xoo-wsc-ecnt {
+      text-align: center;
+      font-size: 11px;
     }
     .xoo-wsc-ctxt {
       /* text: bag */
@@ -453,6 +458,7 @@ Template: thegem
     body.single-product h3.product_title {
       margin-top: 287px;
       color: black;
+      font-size: 14px;
     }
     body.single-product .woocommerce-product-details__short-description {
       max-width: 420px
