@@ -5,7 +5,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-$empty_cart_txt 	= isset( $options['sc-empty-text']) ? $options['sc-empty-text'] : __('Your cart is empty.','side-cart-woocommerce');
+$empty_cart_txt 	= isset( $options['sc-empty-text']) ? $options['sc-empty-text'] : __('Your Bag is empty.','side-cart-woocommerce');
 $head_title 		= isset($options['sc-head-text']) ? $options['sc-head-text']: __("Your Cart",'side-cart-woocommerce'); //Head Title
 
 ?>

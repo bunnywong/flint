@@ -152,7 +152,9 @@ Template: thegem
     .footer-left-wrapper {
       padding-left: 0;
     }
-    .fancybox-bg {
+    /* modal */
+    .fancybox-bg,
+    .xoo-wsc-modal.xoo-wsc-active .xoo-wsc-opac {
       background-color: #ECEBE9;
       opacity: .65;
     }
@@ -477,6 +479,7 @@ Template: thegem
       border: solid 1px #979797;
       border-radius: 0 !important;
       font-weight: normal;
+      padding: 0 40px;
     }
     @media (max-width: 767px) {
       .single-product-content-right {
@@ -503,11 +506,12 @@ Template: thegem
     body.woocommerce-checkout .woocommerce-checkout-review-order-table > tbody,
       /* paypal */
     /*body.woocommerce-checkout .wc_payment_method label,*/
+    body.woocommerce-checkout .wc_payment_method label,
     body.woocommerce-checkout .wc_payment_method label img,
     body.woocommerce-checkout .payment_box.payment_method_paypal, /* tips */
     body.woocommerce-checkout .checkout-place-order button::before, /* Proceed to PayPal */
     _ {
-      display: none;
+      display: none !important;
     }
     body.woocommerce-checkout .woocommerce {
       margin-top: 0;
@@ -566,12 +570,27 @@ Template: thegem
     }
     /* custom paypal radio + logo */
     body.woocommerce-checkout .wc_payment_method.payment_method_paypal::before {
-      content: "";
-      display: block;
-      width: 200px;
-      height: 50px;
+      /* @TODO */
+      /*border: 1px solid red; */
+      background-image: url(/wp-content/uploads/2018/06/paypal_icon.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 60px;
+      height: 40px;
       position: absolute;
-      border: 1px solid red; /* @TODO */
+      margin-left: 40px;
+    }
+    body.woocommerce-checkout .radio-sign.checked {
+      visibility: hidden;
+    }
+    body.woocommerce-checkout .radio-sign.checked::before {
+      background-image: url(/wp-content/uploads/2018/06/payment_method_tick.png);
+      background-repeat: no-repeat;
+      background-color: transparent;
+      background-size: 100%;
+      width: 16px !important;
+      height: 16px !important;
+      visibility: visible;
     }
     /* text: Proceed to PayPal */
     body.woocommerce-checkout  .checkout-place-order button {
