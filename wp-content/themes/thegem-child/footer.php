@@ -70,7 +70,7 @@
 						<?php endif; ?>
 					</div>
 
-					<div class="col-md-3 col-md-pull-9"><div class="footer-site-info"><?php echo wp_kses_post(do_shortcode(nl2br(stripslashes(thegem_get_option('footer_html'))))); ?></div></div>
+					<div class="col-md-3 col-md-pull-9 footer-left-wrapper"><div class="footer-site-info"><?php echo wp_kses_post(do_shortcode(nl2br(stripslashes(thegem_get_option('footer_html'))))); ?></div></div>
 
 				</div></div>
 			</footer><!-- #footer-nav -->

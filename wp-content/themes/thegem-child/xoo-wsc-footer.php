@@ -18,7 +18,7 @@ $cont_txt 			= isset($options['sc-continue-text']) ? $options['sc-continue-text'
 
   <div class="xoo-wsc-footer first">
     <div class="row m0">
-      <div class="col-xs-4"><span><?php esc_attr_e($subtotal_txt,'side-cart-woocommerce') ?></span></div>
+      <div class="col-xs-4"><span class="text__grand-total"><?php esc_attr_e($subtotal_txt,'side-cart-woocommerce') ?></span></div>
       <div class="col-xs-4"></div>
       <div class="col-xs-4 text-center"><?php echo wc_price(WC()->cart->subtotal); ?></div>
     </div>
