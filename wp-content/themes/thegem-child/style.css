@@ -136,7 +136,10 @@ Template: thegem
       text-align: center;
       font-size: 11px;
       border-bottom: 1px solid transparent;
+      padding-bottom: 10px; /* @TBC: from org padding-bottom:35px */
+      margin-bottom: 25px; /* @TBC: from org padding-bottom:35px */
     }
+    #primary-menu.no-responsive .current-menu-item > a,
     #primary-menu.no-responsive > li > a:hover {
       border-bottom: 1px solid;
     }
@@ -295,14 +298,22 @@ Template: thegem
         height: auto;
       }
       /* @TODO */
-      /*#primary-menu > li:first-child,
-      #primary-menu > li:nth-child(2) {
-        left: 200px !important;
+      .header-main {
+        max-width: 1170px;
+        margin: 0 auto;
       }
-      #primary-menu > li:last-child,
-      #primary-menu > li:nth-last-child(2) {
-        right: 200px !important;
-      }*/
+      #site-header-wrapper {
+        height: 97px;
+      }
+      #primary-menu {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+      }
+      #site-header .primary-navigation .menu-item-logo {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
     }
 
   /* 4.cart in side [ :CART ] */
