@@ -35,6 +35,9 @@ Template: thegem
   .text-center {
     text-align: center;
   }
+  .text-right {
+    text-align: right;
+  }
   .my-hide {
     display: none;
   }
@@ -189,19 +192,17 @@ Template: thegem
       #site-header {
         z-index: 6 !important;
         min-height: 60px;
-      }
-      .site-title {
-        width: 100%;
-        position: absolute;
-        padding: 15px 0 !important;
-      }
-      #site-header {
         box-shadow: none !important;
         position: fixed !important;
         width: 100%;
       }
       .site-logo {
         text-align: center;
+      }
+      .site-title {
+        width: 100%;
+        position: absolute;
+        padding: 15px 0 !important;
       }
       .overlay-menu-table {
         position: fixed;
@@ -286,6 +287,9 @@ Template: thegem
       #page:not(.vertical-header) #site-header {
         box-shadow: none;
       }
+      #site-header {
+        background-color: white !important;
+      }
       #site-header #primary-menu .site-logo img.small {
         max-width: 100px;
         height: auto;
@@ -303,6 +307,9 @@ Template: thegem
 
   /* 4.cart in side [ :CART ] */
     /* float cart */
+    .xoo-wsc-close {
+      right: 56px;
+    }
     .xoo-wsc-close::before {
       content: "";
       display: block;
@@ -368,6 +375,20 @@ Template: thegem
     .xoo-wsc-header,
     .xoo-wsc-product {
       border-bottom: none;
+    }
+    .xoo-wsc-header {
+      padding-top: 40px;
+    }
+    .xoo-wsc-product:hover {
+      background: #ECEBE9;
+    }
+    .bag__qty,
+    .bag__product-info {
+      padding: 0;
+    }
+    ._line-total span.woocommerce-Price-amount {
+      text-align: right;
+      margin-right: 20px;
     }
     .xoo-wsc-ecnt {
       text-align: center;
@@ -565,7 +586,8 @@ Template: thegem
     body.woocommerce-checkout .woocommerce-checkout-one-page #order_review > table .order-total th,
     body.woocommerce-checkout .woocommerce-checkout-one-page #order_review > table .order-total td,
     _ {
-      border-bottom: 1px solid #979797 !important;
+      border-top: 1px solid #979797 !important;
+      border-bottom: 0 !important;
     }
     body.woocommerce-checkout .woocommerce .woocommerce-checkout .shop_table.woocommerce-checkout-payment-total .cart-subtotal td .amount,
     body.woocommerce-checkout .woocommerce .woocommerce-checkout.woocommerce-checkout-one-page .shop_table.woocommerce-checkout-payment-total .order-total td .amount,
@@ -576,7 +598,7 @@ Template: thegem
     body.woocommerce-checkout .wc_payment_method.payment_method_paypal::before {
       /* @TODO */
       /*border: 1px solid red; */
-      background-image: url(/wp-content/uploads/2018/06/paypal_icon.png);
+      background-image: url(/wp-content/uploads/2018/06/paypal_icon-1.png);
       background-repeat: no-repeat;
       background-size: 100%;
       width: 60px;
@@ -634,7 +656,7 @@ Template: thegem
       _ {
         /* custom section title: 1 & 2 */
         font-family: 'FuturaPTBook', Fallback, sans-serif;
-        margin: 38px -21px;
+        margin: 38px -21px 0 -21px !important;
         padding: 20px;
         background: #ECEBE9;
         display: block;
@@ -643,6 +665,7 @@ Template: thegem
         /* custom section title: payment methold */
         content: "PAYMENT METHOD";
         margin-top: 0;
+        margin-bottom: 0;
       }
       /* paypal wrapper */
       body.woocommerce-checkout .woocommerce-checkout-one-page #order_review {
@@ -850,8 +873,10 @@ Template: thegem
     }
   }
 
-
-
+/*.page-preloader-spin {
+  background-image: url();
+}
+*/
 
 
 
