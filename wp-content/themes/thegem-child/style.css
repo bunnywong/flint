@@ -298,9 +298,8 @@
           max-width: 100px;
           height: auto;
         }
-        /* @TODO */
         .header-main {
-          max-width: 1170px;
+          max-width: 1210px;
           margin: 0 auto;
         }
         #site-header-wrapper {
