@@ -632,10 +632,10 @@
         position: absolute;
         margin-left: 40px;
       }
-      body.woocommerce-checkout .radio-sign.checked {
+      body.woocommerce-checkout #payment .radio-sign.checked {
         visibility: hidden;
       }
-      body.woocommerce-checkout .radio-sign.checked::before {
+      body.woocommerce-checkout #payment .radio-sign.checked::before {
         background-image: url(/wp-content/uploads/2018/06/payment_method_tick.png);
         background-repeat: no-repeat;
         background-color: transparent;
