@@ -304,7 +304,7 @@
           margin: 0 auto;
         }
         #site-header-wrapper {
-          /*height: 97px;*/
+          height: 97px !important;
         }
         #primary-menu {
           display: flex !important;
@@ -718,6 +718,19 @@
     body.home br {
       display: none;
     }
+    body.home .hero-image {
+      display: block !important;
+      visibility: visible !important;
+    }
+    body.home .hero-image {
+      margin-top: 0 !important;
+      height: 762px;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      background-image: url(/wp-content/uploads/2018/06/d-1_Lit_20180604_Joyce-Wang-product_0020.png);
+      overflow: hidden;
+    }
     body.home .wrapper img {
       max-width: 100%
     }
@@ -922,21 +935,10 @@
     /*visibility: visible !important;*/
     /*opacity: 1 !important;*/
   }
-
-
-  .ls-overflow-visible {
-    /*margin-top: 3em;*/
+  /* hack original theme */
+  @media (max-width: 1212px) and (min-width: 980px) {
+    /* keep show logo */
+    #site-header .menu-item-logo {
+      display: block !important;
+    }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
