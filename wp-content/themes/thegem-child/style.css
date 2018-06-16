@@ -315,6 +315,7 @@
           margin: 0 !important;
           padding: 0 !important;
         }
+
         #site-header.fixed li.menu-item-logo .site-logo {
           margin-top: 15px;
         }
@@ -324,7 +325,7 @@
         #site-header.fixed .menu-item-logo {
           height: 85px !important;
         }
-        #site-header.fixed #primary-menu > a {
+        #site-header.fixed  #primary-menu.no-responsive a {
           padding-bottom: 0 !important;
         }
       }
