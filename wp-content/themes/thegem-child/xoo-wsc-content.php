@@ -67,7 +67,7 @@ $head_title 		= isset($options['sc-head-text']) ? $options['sc-head-text']: __("
             <div class="col-xs-2 bag__qty text-center">x <?php echo $cart_item['quantity']; ?></div>
             <div class="col-xs-4 bag__product-info text-center">
               <div><?php echo $product_name; ?></div>
-              <div><?php //if($attributes){echo $attributes; } ?></div>
+              <div><?php if($attributes){echo $attributes; } ?></div>
             </div>
             <div class="col-xs-4 _line-total text-right"><?php echo $product_subtotal; ?></div>
           </div>

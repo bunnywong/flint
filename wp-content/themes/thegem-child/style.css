@@ -120,6 +120,7 @@
       body #page-title,
       #primary-menu.no-responsive > li > a::before, /* icon in desktop menu */
       .xoo-wsc-footer-a, /* cart list line */
+      .xoo-wsc-body .variation dt,
       .gem-gallery-hover-default .gem-gallery-preview-carousel-wrap:hover .gem-gallery-item a:after,
       body.single-product .cart button + a,
       body.single-product .fancy-gallery::before,
@@ -343,6 +344,11 @@
         width: 16px;
         height: 16px;
       }
+      .xoo-wsc-body .variation,
+      .xoo-wsc-body .variation dd {
+        line-height: 1.36;
+        margin: 0;
+      }
       @media (min-width: 769px) {
         /* float cart */
         .xoo-wsc-modal .xoo-wsc-basket {
@@ -408,11 +414,13 @@
       }
       .bag__qty,
       .bag__product-info {
+        line-height: 1.36;
         padding: 0;
       }
       ._line-total span.woocommerce-Price-amount {
         text-align: right;
         margin-right: 20px;
+        line-height: 1.36;
       }
       .xoo-wsc-ecnt {
         text-align: center;
