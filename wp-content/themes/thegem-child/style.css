@@ -757,12 +757,11 @@
     }
     .add-to-cart-wrapper button {
       background: transparent;
-      background: transparent;
-      padding: 10px 20px;
-      padding: 12px 50px;
       border: solid 1px #979797;
     }
     .add-to-cart-wrapper a {
+      padding: 12px 50px;
+      display: block;
       color: black;
     }
     .add-to-cart-wrapper button:hover {
