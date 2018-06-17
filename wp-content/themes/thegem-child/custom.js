@@ -19,5 +19,4 @@ jQuery(document).ready(function ($) {
   if ($(document).width() < 768) {
     $('.menu-item-cart').after(menuItems)
   }
-  }
 })
