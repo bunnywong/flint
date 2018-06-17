@@ -962,10 +962,10 @@
     visibility: hidden !important;
     animation: none !important;
   }
-  .xoo-wsc-modal {
+  body.single-product .xoo-wsc-modal {
     display: none;
   }
-  .preloader-loaded ~ .xoo-wsc-modal {
+  body.single-product .preloader-loaded ~ .xoo-wsc-modal {
     display: block;
   }
 
