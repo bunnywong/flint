@@ -581,6 +581,9 @@
         font-family: 'FuturaPTBook', Fallback, sans-serif;
         padding: 0;
       }
+      h2#ship-to-different-address-title {
+        font-size: 14px;
+      }
       body.woocommerce-checkout .woocommerce-billing-fields h2::after {
         /* custom section title: 1 */
         content: "CONTACT DETAILS";
