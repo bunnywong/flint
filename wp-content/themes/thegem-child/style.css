@@ -920,29 +920,40 @@
         margin-top: -20px;
       }
     }
-
-  #page-preloader.preloader-loaded .page-preloader-spin {
-    opacity: 1 !important;
+  #page-preloader {
+    /* @DEBUG */
+    /*opacity: 1 !important;*/
+    /*visibility: visible !important;*/
+    background: white;
   }
-  #page-preloader.preloader-loaded .page-preloader-spin::before {
-    display: none;
-  }
-  #page-preloader.preloader-loaded .page-preloader-spin::after {
-    /*animation: unset;
-    content: "";
+  #page-preloader .page-preloader-spin,
+  .block-preloader .page-preloader-spin,
+  .preloader-spin {
     width: 20px;
     height: 20px;
-    background-image: url(/wp-content/uploads/2018/06/loading.gif) !important;*/
-    /*opacity: 1 !important;
-    left: calc(50% - 20px);
-    top: calc(50% - 20px);
-    border: 0;*/
   }
-  #page-preloader.preloader-loaded,
-  .block-preloader.preloader-loaded {
-    /*visibility: visible !important;*/
-    /*opacity: 1 !important;*/
+  #page-preloader.preloader-loaded .page-preloader-spin,
+  .block-preloader.preloader-loaded .page-preloader-spin {
+    opacity: 1 !important;
+    animation: PreloaderSpin 2s linear infinite;
+    border-width: 2px;
+    border-color: black;
+    border-top-color: transparent;
   }
+  #page-preloader .page-preloader-spin:before,
+  .block-preloader .page-preloader-spin:before,
+  #page-preloader .page-preloader-spin:after,
+  .block-preloader .page-preloader-spin:after,
+  _{
+    display: none !important;
+  }
+  .xoo-wsc-modal {
+    display: none;
+  }
+  .preloader-loaded ~ .xoo-wsc-modal {
+    display: block;
+  }
+
   /* hack original theme */
   @media (max-width: 1212px) and (min-width: 980px) {
     /* keep show logo */
