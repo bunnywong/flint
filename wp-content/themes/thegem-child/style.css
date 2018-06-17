@@ -117,6 +117,7 @@
         color: black !important;
       }
       /* global hidden [ .GH ]*/
+      br,
       body #page-title,
       #primary-menu.no-responsive > li > a::before, /* icon in desktop menu */
       .xoo-wsc-footer-a, /* cart list line */
@@ -150,7 +151,7 @@
       }
       footer#footer-nav {
         padding-top: 84px;
-        padding-bottom: 50px;
+        padding-bottom: 45px;
         background-color: #ECEBE9 !important;
         border: 0;
       }
@@ -732,9 +733,6 @@
       }
     /* 7.home */
       /* home:common */
-    body.home br {
-      display: none;
-    }
     body.home .hero-image {
       display: block !important;
       visibility: visible !important;
