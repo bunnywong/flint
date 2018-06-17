@@ -734,10 +734,6 @@
     /* 7.home */
       /* home:common */
     body.home .hero-image {
-      display: block !important;
-      visibility: visible !important;
-    }
-    body.home .hero-image {
       margin-top: 0 !important;
       height: 762px;
       width: 100%;
@@ -757,12 +753,11 @@
     }
     .add-to-cart-wrapper button {
       background: transparent;
-      background: transparent;
-      padding: 10px 20px;
-      padding: 12px 50px;
       border: solid 1px #979797;
     }
     .add-to-cart-wrapper a {
+      padding: 12px 50px;
+      display: block;
       color: black;
     }
     .add-to-cart-wrapper button:hover {
@@ -830,6 +825,10 @@
       body.home .mobile,
       .scroll-to-top {
         display: none !important;
+      }
+      body.home .hero-image {
+        display: block !important;
+        visibility: visible !important;
       }
       /* row:common */
       body.home .wrapper .img-wrapper {
