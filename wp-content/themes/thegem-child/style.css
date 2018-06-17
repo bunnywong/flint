@@ -932,20 +932,26 @@
     width: 20px;
     height: 20px;
   }
-  #page-preloader.preloader-loaded .page-preloader-spin,
-  .block-preloader.preloader-loaded .page-preloader-spin {
+  #page-preloader .page-preloader-spin,
+  .block-preloader .page-preloader-spin,
+  .preloader-spin,
+  _ {
     opacity: 1 !important;
     animation: PreloaderSpin 2s linear infinite;
     border-width: 2px;
     border-color: black;
-    border-top-color: transparent;
+    border-top-color: white;
   }
+  .preloader-spin:before,
   #page-preloader .page-preloader-spin:before,
   .block-preloader .page-preloader-spin:before,
+  .preloader-spin:after,
   #page-preloader .page-preloader-spin:after,
   .block-preloader .page-preloader-spin:after,
   _{
     display: none !important;
+    visibility: hidden !important;
+    animation: none !important;
   }
   .xoo-wsc-modal {
     display: none;
