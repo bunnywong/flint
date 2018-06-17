@@ -502,7 +502,7 @@
         width: 10px;
         height: 10px;
         opacity: 1;
-        right: 9px;
+        right: 15px;
         bottom: 9px;
         top: unset;
         left: unset;
@@ -538,6 +538,7 @@
       @media (min-width: 768px) {
         body.single-product h3.product_title {
           margin-top: 287px;
+          margin-top: 46px;
         }
       }
       @media (max-width: 767px) {
