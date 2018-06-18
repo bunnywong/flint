@@ -543,11 +543,15 @@
       }
       body.single-product .cart button {
         /* add to cart */
-        background: transparent !important;
+        background-color: transparent !important;
         border: solid 1px #979797;
         border-radius: 0 !important;
         font-weight: normal;
         padding: 0 40px;
+      }
+      body.single-product .cart button:hover {
+        background-color: #ECEBE9 !important;
+        border: solid 1px #ECEBE9;
       }
       @media (min-width: 768px) {
         body.single-product h3.product_title {
@@ -768,7 +772,7 @@
       display: block;
       color: black;
     }
-    .add-to-cart-wrapper button:hover {
+    body.home .add-to-cart-wrapper button:hover {
       background-color: #ECEBE9;
       border: solid 1px transparent;
     }
