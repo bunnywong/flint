@@ -80,7 +80,7 @@ Display the pricing discount table beautifully on the product page. Start sellin
 * Buy T-shirts from Category Apparel and save 10% – [Video](https://www.youtube.com/watch?v=OEWc7fL3qeM)
 * Get 30% off on Category A & Category B
 * Purchase any 6 items from Category A and get 25% discount on total cart value.
-* Purchase 3 products from Category A or B or C or from all of them and get 20% discount valid from dd/mm/yyyy to dd/mm/yyyy
+* Purchase 1 product from Category A, 2 Products from Category B and get 20% discount valid from dd/mm/yyyy to dd/mm/yyyy
 
 = Quantity range based tiered pricing discounts =
 * [Buy 1 to 5 quantities, get $2 discount, Buy 6 or more, get $3 discount](http://docs.flycart.org/woocommerce-discount-rules/fixed-price-discount-examples/buy-1-to-5-quantity-with-2-discount-buy-6-and-more-with-3-discount-bulk-quantity-discounts)

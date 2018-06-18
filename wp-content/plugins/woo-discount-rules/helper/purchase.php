@@ -84,7 +84,7 @@ if ( ! class_exists( 'FlycartWooDiscountRulesPurchase' ) ) {
          */
         public function isPro()
         {
-            return false;
+            return true;
         }
 
         /**
