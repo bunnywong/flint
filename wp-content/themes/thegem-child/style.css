@@ -481,6 +481,9 @@
         fill: rgba(0,0,0,.5);;
       }
       /* RHS: */
+      body.single-product .price + table {
+        display: none !important;
+      }
       body.single-product .rating-divider,
       body.single-product .back-to-shop-button,
       body.single-product .rating-divider + .price, /*form > price*/
