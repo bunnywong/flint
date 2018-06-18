@@ -752,14 +752,15 @@
     body.home .block-content {
       padding: 0;
     }
-    .add-to-cart-wrapper {
+    body.home .add-to-cart-wrapper {
       padding-bottom: 85px;
     }
-    .add-to-cart-wrapper button {
+    body.home .add-to-cart-wrapper button {
+      margin-top: 36px;
       background: transparent;
       border: solid 1px #979797;
     }
-    .add-to-cart-wrapper a {
+    body.home .add-to-cart-wrapper a {
       padding: 12px 50px;
       display: block;
       color: black;
