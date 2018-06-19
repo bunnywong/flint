@@ -249,6 +249,12 @@
           height: 100%;
         }
         /* menu items */
+        #primary-navigation {
+          width: 100%;
+        }
+        #primary-navigation .menu-toggle {
+          right: 4px;
+        }
         #primary-menu li:first-child {
           margin-top: 50px;
         }
@@ -364,7 +370,7 @@
         .xoo-wsc-modal .xoo-wsc-basket {
           bottom: unset;
           top: 120px;
-          right: 125px;
+          right: 120px;
           padding: 0;
         }
         /* slide cart */
@@ -382,6 +388,7 @@
           padding: 0;
           bottom: unset;
           top: 0;
+          right: 6px;
         }
 
       }
@@ -400,7 +407,7 @@
       .xoo-wsc-bki::before {
         content: "";
         display: block;
-        background-image: url('/wp-content/uploads/2018/06/mobile_shopping_bag.png');
+        background-image: url(/wp-content/uploads/2018/06/shopping_bag_icon.png);
         background-repeat: no-repeat;
         background-size: contain;
         width: 36px;
