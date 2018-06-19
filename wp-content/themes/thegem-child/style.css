@@ -305,19 +305,6 @@
           max-width: 100px;
           height: auto;
         }
-        #site-header #primary-menu .site-logo img.default {
-          transition: all .25s ease-in-out;
-        }
-        #site-header.fixed #primary-menu .site-logo img.default {
-          opacity: 1 !important;
-          width: 100px;
-          height: 20px;
-          transform: scale(.8);
-          margin-top: 8px;
-        }
-        #site-header #primary-menu .site-logo img.small {
-          opacity: 0 !important;
-        }
         .header-main {
           max-width: 1210px;
           margin: 0 auto;
