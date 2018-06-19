@@ -591,14 +591,15 @@
       }
       @media (min-width: 768px) {
         body.single-product h3.product_title {
-          /*margin-top: 287px;*/
-          /*margin-top: 46px;*/
           margin-top: -17px;
         }
       }
       @media (max-width: 767px) {
-        .single-product-content-right {
+        body.single-product .single-product-content-right {
           text-align: center;
+        }
+        body.single-product .woocommerce-variation.single_variation .woocommerce-variation-price {
+          float: none;
         }
         body.single-product .woocommerce-product-details__short-description {
           margin: 0 auto;
