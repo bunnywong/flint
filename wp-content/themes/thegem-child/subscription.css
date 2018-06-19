@@ -1,0 +1,152 @@
+/* Ninja Modal */
+.nf-before-form-content,
+.ninja-forms-req-symbol,
+.nf-error-field-errors, /* error summary at footer */
+_ {
+  display: none !important;
+}
+.nf-error-wrap {
+  font-size: 11px;
+  text-align: center;
+}
+.mfp-content .mfp-close {
+  color: transparent;
+  background-image: url(/wp-content/uploads/2018/06/mobile_close_icon.png);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: center;
+  top: 8px;
+  right: 8px;
+}
+.mfp-content {
+  text-align: middle;
+}
+/* -------------------------------------------------------------------------------- */
+/* page 1 [ P1 ] */
+.mfp-content h3 {
+  margin: 75px auto 0 auto;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  line-height: normal;
+}
+.mfp-content .content-wrapper {
+  text-align: center;
+  padding-top: 5px;
+  font-size: 11px;
+  max-width: 223px;
+  margin: 0 auto;
+  line-height: normal;
+}
+.mfp-content .nf-field-container.hr-container {
+  margin: 0 auto;
+  max-width: 223px !important;
+}
+.mfp-content .nf-field-container.hr-container hr{
+  border-top: 0;
+  border-bottom: solid 1px #979797;
+}
+.mfp-content .email-wrapper {
+  padding-top: 7px;
+  max-width: 260px;
+  margin: 0 auto;
+}
+.mfp-content .email-wrapper input {
+  text-align: center;
+  background: transparent ;
+  border: 0;
+  font-size: 11px;
+  border-bottom: .3px solid #979797;
+  line-height: 1.36;
+  height: 25px;
+}
+.mfp-content .email-wrapper input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #979797;
+}
+.mfp-content .email-wrapper input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #979797;
+}
+.mfp-content .email-wrapper input::-ms-input-placeholder { /* Microsoft Edge */
+  color: #979797;
+}
+.mfp-content .submit-wrapper .field-wrap input[type=button] {
+  margin: 25px auto 0 auto;
+  display: block;
+  font-size: 11px;
+  background: transparent;
+  border-color: #979797;
+  width: 128px;
+  height: 38px;
+}
+.mfp-content .submit-wrapper .field-wrap input[type=button]:hover {
+  color: white;
+  background-color: #979797;
+}
+.mfp-content .footer-wrapper {
+  margin: 63px auto 0 auto;
+  color: #979797;
+  font-size: 8px;
+  text-align: center;
+  max-width: 199px;
+  line-height: normal;
+}
+/* mobile */
+@media (max-width: 767px) {
+  .mfp-content h3 {
+    max-width: 172px
+  }
+  .mfp-content .submit-wrapper {
+    margin-top: -10px;
+  }
+}
+/* desktop */
+@media (min-width: 768px) {
+  .white-popup {
+    min-height: 280px !important;
+  }
+  .mfp-content .mfp-close {
+    top: 22px;
+    right: 22px;
+  }
+  .mfp-content h3 {
+    margin-top: 95px;
+  }
+  .mfp-content .nf-field-container.hr-container {
+    margin-top: 15px;
+    max-width: 393px !important;
+  }
+  .mfp-content .content-wrapper,
+  .mfp-content .email-wrapper {
+    max-width: 393px;
+  }
+  .mfp-content .footer-wrapper {
+    margin: -8px auto 85px auto;
+    max-width: none;
+  }
+}
+/* -------------------------------------------------------------------------------- */
+/* page 2: thank you [ P2 ] */
+
+.mfp-content .nf-response-msg {
+  text-align: center;
+  margin-top: 40px;
+}
+.mfp-content .nf-response-msg p {
+  font-size: 11px;
+}
+.mfp-content p button {
+  background-color: transparent;
+  font-size: 11px;
+  width: 128px;
+  height: 38px;
+  border: solid 1px #979797;
+  margin-bottom: 35px;
+}
+@media (min-width: 768px) {
+  .mfp-content .nf-response-msg {
+    margin-top: 65px;
+  }
+  .mfp-content p button {
+    margin-top: 10px;
+  }
+}

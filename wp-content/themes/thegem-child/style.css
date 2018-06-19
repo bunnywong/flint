@@ -53,6 +53,7 @@
       }
       /* global font family */
       body,
+      .mfp-content h3,
       #primary-menu.no-responsive > li > a,
       .gem-button,
       body.home h2,
@@ -337,7 +338,10 @@
       }
 
     /* 4.cart in side [ :CART ] */
-      /* float cart */
+      /* float cart/cart icon */
+      .mfp-ready ~ .xoo-wsc-modal {
+        opacity: .5;
+      }
       .xoo-wsc-close {
         right: 56px;
       }

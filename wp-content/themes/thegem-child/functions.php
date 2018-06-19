@@ -1,8 +1,10 @@
 <?php
   // enqueue the child theme stylesheet
   function thegem_child_enqueue_css() {
-    wp_register_style( 'childstyle', get_stylesheet_directory_uri() . '/style.css'  );
+    wp_register_style( 'childstyle', get_stylesheet_directory_uri() . '/style.css' );
+    wp_register_style( 'subscription', get_stylesheet_directory_uri() . '/subscription.css' );
     wp_enqueue_style( 'childstyle' );
+    wp_enqueue_style( 'subscription' );
   }
   add_action( 'wp_enqueue_scripts', 'thegem_child_enqueue_css', 11);
 
