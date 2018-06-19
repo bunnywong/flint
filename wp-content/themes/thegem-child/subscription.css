@@ -1,24 +1,9 @@
-/* mailchimp modal */
-.mailmunch-overlay {
-  opacity: .9;
-}
-body .theme-simple h1 {
-  margin-top: 106px;
-  font-size: 16px;
-  font-weight: normal;
-}
-
 /* Ninja Modal */
 .nf-before-form-content,
 .ninja-forms-req-symbol,
-.nf-error-field-errors, /* footer error summary */
-/*.nf-error,*/
-/*.nf-form-errors,*/
+.nf-error-field-errors, /* error summary at footer */
 _ {
   display: none !important;
-}
-.white-popup {
-  min-height: 280px !important;
 }
 .nf-error-wrap {
   font-size: 11px;
@@ -36,7 +21,8 @@ _ {
 .mfp-content {
   text-align: middle;
 }
-/* page 1 */
+/* -------------------------------------------------------------------------------- */
+/* page 1 [ P1 ] */
 .mfp-content h3 {
   margin: 75px auto 0 auto;
   font-size: 16px;
@@ -104,6 +90,7 @@ _ {
   max-width: 199px;
   line-height: normal;
 }
+/* mobile */
 @media (max-width: 767px) {
   .mfp-content h3 {
     max-width: 172px
@@ -111,9 +98,12 @@ _ {
   .mfp-content .submit-wrapper {
     margin-top: -10px;
   }
-
 }
+/* desktop */
 @media (min-width: 768px) {
+  .white-popup {
+    min-height: 280px !important;
+  }
   .mfp-content .mfp-close {
     top: 22px;
     right: 22px;
@@ -135,7 +125,8 @@ _ {
   }
 }
 /* -------------------------------------------------------------------------------- */
-/* page 2: thank you */
+/* page 2: thank you [ P2 ] */
+
 .mfp-content .nf-response-msg {
   text-align: center;
   margin-top: 40px;
@@ -157,31 +148,5 @@ _ {
   }
   .mfp-content p button {
     margin-top: 10px;
-    /*margin-bottom: 20px;*/
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
