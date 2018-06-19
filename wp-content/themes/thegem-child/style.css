@@ -504,6 +504,8 @@
       body.single-product .rating-divider,
       body.single-product .back-to-shop-button,
       body.single-product .rating-divider + .price, /*form > price*/
+      body.single-product .woocommerce-product-details__short-description + .price,
+      body.single-product .price + table,
       /* form variationis */
       body.single-product .woocommerce-variation-availability, /* empty place holder */
       body.single-product .variations_form .label, /* text: color */
@@ -519,7 +521,7 @@
         display: none !important;
       }
       body.single-product {
-        font-size: 12px;
+        font-size: 14px;
       }
       /* LHS */
       body.single-product .gem-gallery-hover-default .gem-gallery-preview-carousel-wrap .gem-gallery-item-image:after {
@@ -559,9 +561,6 @@
       }
       body.single-product .space {
         height: 25px;
-      }
-      body.single-product .price + table {
-        display: none !important;
       }
       body.single-product .woocommerce-Price-amount {
         font-size: 16px;
