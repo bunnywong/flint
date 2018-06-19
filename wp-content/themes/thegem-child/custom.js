@@ -17,6 +17,6 @@ jQuery(document).ready(function ($) {
   let menuItems = `<li id="menu-item-91" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-81 megamenu-first-element"><a target="_blank" href="mailto:press@joycewang.com">PRESS</a></li>
                     <li id="menu-item-91" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-81 megamenu-first-element"><a target="_blank" href="mailto:info@joycewang.com">CONTACT</a></li>`;
   if ($(document).width() < 768) {
-    $('.menu-item-cart').after(menuItems)
+    $('#menu-item-81').after(menuItems)
   }
 })
