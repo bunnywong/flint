@@ -120,6 +120,7 @@
       /* global hidden [ .GH ]*/
       br,
       body #page-title,
+      .xoo-wsc-modal.xoo-wsc-active .xoo-wsc-basket,
       #primary-menu.no-responsive > li > a::before, /* icon in desktop menu */
       .xoo-wsc-footer-a, /* cart list line */
       .xoo-wsc-body .variation dt,
