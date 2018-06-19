@@ -149,11 +149,16 @@
       body.fixed .xoo-wsc-modal {
         display: none;
       }
+      /* :footer */
       footer#footer-nav {
         padding-top: 84px;
         padding-bottom: 45px;
         background-color: #ECEBE9 !important;
         border: 0;
+      }
+      .widget_custom_html {
+        margin-top: 0;
+        width: 100%;
       }
       .custom-html-widget {
         text-align: right;
