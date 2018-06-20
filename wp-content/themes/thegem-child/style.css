@@ -283,6 +283,7 @@
           justify-content: center;
         }
         #site-header #primary-navigation.overlay-active button {
+          right: calc(50% - 18px);
           bottom: 73px;
           position: fixed;
         }
