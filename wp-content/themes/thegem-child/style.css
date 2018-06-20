@@ -525,7 +525,7 @@
         font-size: 14px;
       }
       /* LHS */
-      body.single-product .gem-gallery-hover-default .gem-gallery-preview-carousel-wrap .gem-gallery-item-image:after {
+      /*body.single-product .gem-gallery-hover-default .gem-gallery-preview-carousel-wrap .gem-gallery-item-image:after {
         content: "";
         background-image: url(/wp-content/uploads/2018/06/shop_enlarge_arrow.png);
         background-repeat: no-repeat;
@@ -544,7 +544,7 @@
         body.single-product .gem-gallery-hover-default .gem-gallery-preview-carousel-wrap .gem-gallery-item-image:after {
           right: 9px;
         }
-      }
+      }*/
       /* RHS */
       body.single-product h3.product_title {
         color: black;
@@ -877,10 +877,6 @@
       body.home .mobile,
       .scroll-to-top {
         display: none !important;
-      }
-      body.home .hero-image {
-        display: block !important;
-        visibility: visible !important;
       }
       /* row:common */
       body.home .wrapper .img-wrapper {
