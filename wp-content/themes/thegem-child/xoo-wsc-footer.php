@@ -11,12 +11,19 @@ $shipping_txt 		= isset($options['sc-shipping-text']) ? $options['sc-shipping-te
 $cart_txt 			= isset($options['sc-cart-text']) ? $options['sc-cart-text'] : __("View Cart",'side-cart-woocommerce'); //Cart Text
 $chk_txt 			= isset($options['sc-checkout-text']) ? $options['sc-checkout-text']: __("Checkout",'side-cart-woocommerce'); //Checkout Text
 $cont_txt 			= isset($options['sc-continue-text']) ? $options['sc-continue-text'] :__( "Continue Shopping",'side-cart-woocommerce'); //Continue Text
-
+$tax_total = WC()->cart->get_taxes();
 ?>
 
 <?php if(!empty($cart_txt) || !empty($chk_txt) || !empty($cont_txt)): // If any footer button exists , add footer div ?>
 
   <div class="xoo-wsc-footer first">
+    <?php if($tax_total) : ?>
+      <div class="row m0">
+        <div class="col-xs-4"><span class="text__grand-total">VAT</span></div>
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4 text-center"><?php echo wc_price(current($tax_total)); ?></div>
+      </div>
+    <?php endif; ?>
     <div class="row m0">
       <div class="col-xs-4"><span class="text__grand-total"><?php esc_attr_e($subtotal_txt,'side-cart-woocommerce') ?></span></div>
       <div class="col-xs-4"></div>
