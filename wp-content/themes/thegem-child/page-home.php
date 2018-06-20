@@ -13,7 +13,7 @@ get_header(); ?>
     <p>At Joyce Wang Studio, we tell stories with materials. We are motivated by pushing the possibilities of form and exploring different techniques to challenge what exists and find new ways of expressing ideas in space. Our love for Terrazzo is at the heart of our new collection: FLINT. </p>
   </div>
 </div>
-<div class="hero-image v2 hidden fadeInUp"> </div>
+<div class="hero-image v2 fadeInUp"> </div>
 
 <div id="main-content" class="main-content home-v2">
 
