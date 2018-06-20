@@ -325,6 +325,9 @@
           align-items: center !important;
           justify-content: space-between !important;
         }
+        #primary-menu .menu-item {
+          min-width: 110px;
+        }
         #site-header .primary-navigation .menu-item-logo {
           margin: 0 !important;
           padding: 0 !important;
