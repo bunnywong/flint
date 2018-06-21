@@ -453,6 +453,11 @@
       .xoo-wsc-header {
         padding-top: 40px;
       }
+      .xoo-wsc-product {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
       .xoo-wsc-product:hover {
         background: #ECEBE9;
       }
@@ -1146,4 +1151,6 @@
       margin-bottom: 0;
     }
   }
-
+img {
+  transition: all 0.5s !important
+}
