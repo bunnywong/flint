@@ -646,7 +646,7 @@
         }
       }
 
-    /* 6.checkout */
+    /* 6.checkout :checkout; */
       /* LHS
         /* sub title */
       body.woocommerce-checkout .woocommerce-billing-fields h2::before,
@@ -697,6 +697,12 @@
       _ {
         border: 0;
         border-bottom: 1px solid #979797;
+      }
+      .address-field.update_totals_on_change:after {
+        content: "Shipping is limited to Hong Kong, UK, USA and Europe.";
+        display: block;
+        font-size: 12px;
+        text-transform: initial;
       }
 
       /* RHS */
@@ -1187,5 +1193,3 @@
        -o-animation: fadein 2s; /* Opera < 12.1 */
           animation: fadein 2s;
 }
-
-
