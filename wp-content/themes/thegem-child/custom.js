@@ -61,4 +61,9 @@ jQuery(document).ready(function ($) {
     $window.trigger('scroll');
   }
 
+  // check Safari
+  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
+  if (isSafari) {
+    $('body').addClass('is-safari')
+  }
 })
