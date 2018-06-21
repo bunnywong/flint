@@ -283,6 +283,7 @@
           justify-content: center;
         }
         #site-header #primary-navigation.overlay-active button {
+          right: calc(50% - 18px);
           bottom: 73px;
           position: fixed;
         }
@@ -324,6 +325,9 @@
           display: flex !important;
           align-items: center !important;
           justify-content: space-between !important;
+        }
+        #primary-menu .menu-item {
+          min-width: 110px;
         }
         #site-header .primary-navigation .menu-item-logo {
           margin: 0 !important;
@@ -525,7 +529,7 @@
         font-size: 14px;
       }
       /* LHS */
-      body.single-product .gem-gallery-hover-default .gem-gallery-preview-carousel-wrap .gem-gallery-item-image:after {
+      /*body.single-product .gem-gallery-hover-default .gem-gallery-preview-carousel-wrap .gem-gallery-item-image:after {
         content: "";
         background-image: url(/wp-content/uploads/2018/06/shop_enlarge_arrow.png);
         background-repeat: no-repeat;
@@ -544,7 +548,7 @@
         body.single-product .gem-gallery-hover-default .gem-gallery-preview-carousel-wrap .gem-gallery-item-image:after {
           right: 9px;
         }
-      }
+      }*/
       /* RHS */
       body.single-product h3.product_title {
         color: black;
@@ -595,6 +599,9 @@
         }
       }
       @media (max-width: 767px) {
+        body.single-product .block-content {
+          padding-top: 15px;
+        }
         body.single-product .single-product-content-right {
           text-align: center;
         }
@@ -784,11 +791,13 @@
       /* home:common */
     body.home .hero-image {
       margin-top: 0 !important;
-      height: 762px;
+      height: 762px; /* v1 */
+      height: 610px;
       width: 100%;
       background-position: center;
       background-size: cover;
       background-image: url(/wp-content/uploads/2018/06/d-1_Lit_20180604_Joyce-Wang-product_0020.png);
+      background-image: url(/wp-content/uploads/2018/06/homepage-0-hero.png);
       overflow: hidden;
     }
     body.home .wrapper img {
@@ -875,10 +884,6 @@
       body.home .mobile,
       .scroll-to-top {
         display: none !important;
-      }
-      body.home .hero-image {
-        display: block !important;
-        visibility: visible !important;
       }
       /* row:common */
       body.home .wrapper .img-wrapper {
@@ -1030,4 +1035,91 @@
     #site-header .menu-item-logo {
       display: block !important;
     }
+  }
+
+  /* -------------------------------------------------------------------------------- */
+  .v2.hero-image {
+    margin-top: 63px;
+  }
+  /* common */
+  body.home #page {
+    background: white;
+  }
+  body.home .hero-top h2,
+  body.home .home-v2 h2,
+  body.home .hero-top p,
+  body.home .home-v2 p,
+  _ {
+    font-size: 16px !important;
+  }
+  body.home .home-v2 .homepage-img {
+    max-width: 780px;
+  }
+  body.home .home-v2 p {
+    max-width: 380px !important;
+    margin: 0 auto;
+  }
+  /* 0.hero */
+  body.home .hero-top {
+    background: white;
+  }
+  body.home .hero-top h2 {
+    margin-top: -10px;
+  }
+  body.home .home-v2 img.homepage-img {
+    max-width: 100%;
+  }
+  body.home .hero-top h2 + p {
+    margin-top: -8px;
+  }
+  body.home .hero-image.v2 {
+    margin-top: 63px !important;
+  }
+  body.home .homepage-img.one {
+    margin-top: 107px;
+  }
+  body.home .homepage-img.one + p,
+  body.home .homepage-img.two,
+  body.home .homepage-img.two + p,
+  body.home .slider-wrapper,
+  body.home .slider-wrapper + p,
+  body.home .homepage-img.four,
+  body.home #main-content .home-v2 h2,
+  _ {
+    margin-top: 80px;
+  }
+  body.home .home-v2 .add-to-cart-wrapper {
+    margin-top: 0;
+  }
+  body.home .home-v2 .add-to-cart-wrapper button {
+    margin-top: 36px;
+    margin-bottom: 142px;
+  }
+
+  /*  mobile - homepage v2 */
+  @media (max-width: 767px) {
+    body.home .hero-top p,
+    body.home .home-v2 p,
+    _ {
+      max-width: 278px !important;
+    }
+  }
+  @media (min-width: 768px) {
+    body.home .hero-top h2,
+    body.home .home-v2 h2,
+    body.home .hero-top p,
+    body.home .home-v2 p,
+    _ {
+      font-size: 14px !important;
+    }
+    body.home .home-v2 img.homepage-img {
+      max-width: 744px;
+    }
+    body.home #main-content .home-v2 h2 {
+      margin-bottom: 0;
+    }
+  }
+
+  .slider-wrapper > .metaslider {
+    margin: 0 auto !important;
   }
