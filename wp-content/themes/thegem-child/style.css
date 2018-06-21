@@ -120,6 +120,7 @@
       /* global hidden [ .GH ]*/
       br,
       body.fixed .menu-toggle,
+      #site-header #primary-menu .site-logo img.small,
       body #page-title,
       .xoo-wsc-modal.xoo-wsc-active .xoo-wsc-basket,
       #primary-menu.no-responsive > li > a::before, /* icon in desktop menu */
@@ -332,9 +333,18 @@
         #site-header {
           background-color: white !important;
         }
-        #site-header #primary-menu .site-logo img.small {
-          max-width: 100px;
+        #site-header .menu-item-logo a img.default {
+          transition: all .2s ease-in-out;
+          display: block;
+          margin: 0 auto;
+        }
+        #site-header.fixed.shrink .menu-item-logo a img.default {
+          opacity: 1;
           height: auto;
+          width: 80px !important;
+          top: 10px !important;
+          position: relative;
+          transform: scale(1); /* aim to 80px */
         }
         .header-main {
           max-width: 1210px;
@@ -1199,3 +1209,5 @@
 body.is-safari #primary-menu.no-responsive > li > a {
   font-weight: 100;
 }
+
+
