@@ -119,6 +119,7 @@
       }
       /* global hidden [ .GH ]*/
       br,
+      body.fixed .menu-toggle,
       body #page-title,
       .xoo-wsc-modal.xoo-wsc-active .xoo-wsc-basket,
       #primary-menu.no-responsive > li > a::before, /* icon in desktop menu */
@@ -301,6 +302,19 @@
         /* */
         .overlay-menu-wrapper.active #primary-menu {
           padding: 0 !important;
+        }
+        .closs-menu-button {
+          position: relative;
+          background-image: url(/wp-content/uploads/2018/06/close_icon.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%;
+          content: "";
+          display: block;
+          width: 16px;
+          height: 16px;
+          top: 45px;
+          left: calc(50% - 8px);
         }
       }
       @media (min-width: 769px) {
