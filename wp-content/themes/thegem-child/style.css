@@ -519,6 +519,9 @@
       body.single-product .gem-next:hover:after {
         background-color: #ECEBE9;
       }
+      body.single-product .single-product-content .gem-gallery {
+        margin-bottom: 0;
+      }
       /* RHS: */
       body.single-product .rating-divider,
       body.single-product .back-to-shop-button,
@@ -1109,8 +1112,10 @@
     margin-top: 36px;
     margin-bottom: 142px;
   }
-
-  /*  mobile - homepage v2 */
+  .slider-wrapper > .metaslider {
+    margin: 0 auto !important;
+  }
+ /*  mobile - homepage v2 */
   @media (max-width: 767px) {
     body.home .hero-top p,
     body.home .home-v2 p,
@@ -1134,6 +1139,3 @@
     }
   }
 
-  .slider-wrapper > .metaslider {
-    margin: 0 auto !important;
-  }
