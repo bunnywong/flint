@@ -1070,6 +1070,7 @@
   /* -------------------------------------------------------------------------------- */
   .v2.hero-image {
     margin-top: 63px;
+    margin-top: 0;
   }
   /* common */
   body.home #page {
@@ -1093,21 +1094,15 @@
   body.home .hero-top {
     background: white;
   }
-  body.home .hero-top h2 {
-    margin-top: -10px;
-  }
   body.home .home-v2 img.homepage-img {
     max-width: 100%;
   }
   body.home .hero-top h2 + p {
     margin-top: -8px;
+    margin-bottom: 0;
   }
-  body.home .hero-image.v2 {
-    margin-top: 63px !important;
-  }
-  body.home .homepage-img.one {
-    margin-top: 107px;
-  }
+  body.home .hero-top h2,
+  body.home .homepage-img.one,
   body.home .homepage-img.one + p,
   body.home .homepage-img.two,
   body.home .homepage-img.two + p,
@@ -1130,6 +1125,9 @@
   }
  /*  mobile - homepage v2 */
   @media (max-width: 767px) {
+    body.home .hero-image {
+      height: calc(100vh - 60px);
+    }
     body.home .hero-top p,
     body.home .home-v2 p,
     _ {
