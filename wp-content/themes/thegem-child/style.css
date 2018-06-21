@@ -392,6 +392,12 @@
         line-height: 1.36;
         margin: 0;
       }
+      .xoo-wsc-items-count {
+        background: transparent !important;
+        color: black !important;
+        left: -1px;
+        top: 3px;
+      }
       @media (min-width: 769px) {
         /* float cart */
         .xoo-wsc-modal .xoo-wsc-basket {
@@ -426,10 +432,6 @@
       .xoo-wsc-basket {
         box-shadow: none;
         background-color: transparent;
-      }
-      .xoo-wsc-items-count {
-        /*@TODO: hide it when dev done*/
-        display: none;
       }
       .xoo-wsc-bki::before {
         content: "";
