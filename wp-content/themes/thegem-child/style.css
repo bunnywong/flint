@@ -145,7 +145,7 @@
         justify-content: center;
         height: 95px;
       }
-      #site-header.fixed {
+      body.fixed #site-header {
         height: 100vh !important;
       }
       #site-header.fixed #primary-menu {
