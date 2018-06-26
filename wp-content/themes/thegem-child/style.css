@@ -470,6 +470,16 @@
         align-items: center;
         justify-content: center;
       }
+      .xoo-wsc-product a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .xoo-wsc-product img {
+        width: 14px;
+        height: 14px;
+        margin-top: -2px;
+      }
       .xoo-wsc-product:hover {
         background: #ECEBE9;
       }
@@ -477,6 +487,11 @@
       .bag__product-info {
         line-height: 1.36;
         padding: 0;
+      }
+      ._line-total {
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       ._line-total span.woocommerce-Price-amount {
         text-align: right;
