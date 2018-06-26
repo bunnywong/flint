@@ -145,6 +145,9 @@
         justify-content: center;
         height: 95px;
       }
+      #site-header.fixed {
+        height: 100vh !important;
+      }
       #site-header.fixed #primary-menu {
         height: 60px;
       }
@@ -275,7 +278,9 @@
           width: 100%;
         }
         #primary-navigation .menu-toggle {
-          right: 4px;
+          /*right: 4px;*/
+          position: fixed;
+          left: 20px;
         }
         #primary-menu li:first-child {
           margin-top: 50px;
