@@ -79,6 +79,7 @@ _ {
   width: 128px;
   height: 38px;
   border-radius: 0 !important;
+  transition: all 0.3s;
 }
 .mfp-content .submit-wrapper .field-wrap input[type=button]:hover {
   background-color: #ECEBE9;
