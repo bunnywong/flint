@@ -931,6 +931,7 @@
         text-align: center;
         width: 100%;
         left: 0;
+        bottom: 0;
         position: absolute;
         padding: 25px 0;
       }
