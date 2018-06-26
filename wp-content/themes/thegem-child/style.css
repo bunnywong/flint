@@ -324,7 +324,6 @@
           padding: 0 !important;
         }
         .closs-menu-button {
-          position: relative;
           background-image: url(/wp-content/uploads/2018/06/close_icon.png);
           background-repeat: no-repeat;
           background-position: center;
@@ -875,6 +874,7 @@
       margin-top: 36px;
       background: transparent;
       border: solid 1px #979797;
+      transition: all 0.3s;
     }
     body.home .add-to-cart-wrapper a {
       padding: 12px 50px;
@@ -884,6 +884,7 @@
     body.home .add-to-cart-wrapper button:hover {
       background-color: #ECEBE9;
       border: solid 1px transparent;
+      transition: all 0.3s;
     }
     @media (max-width: 767px) {
       body.home .desktop,
