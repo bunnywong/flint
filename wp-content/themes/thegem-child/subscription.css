@@ -80,8 +80,7 @@ _ {
   height: 38px;
 }
 .mfp-content .submit-wrapper .field-wrap input[type=button]:hover {
-  color: white;
-  background-color: #979797;
+  background-color: #ECEBE9;
 }
 .mfp-content .footer-wrapper {
   margin: 63px auto 0 auto;
