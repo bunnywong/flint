@@ -598,7 +598,7 @@
       }
       body.single-product .woocommerce-product-details__short-description {
         max-width: 420px;
-        line-height: 15px;
+        line-height: 24px;
       }
       body.single-product .woocommerce-product-details__short-description a {
         color: black !important;
