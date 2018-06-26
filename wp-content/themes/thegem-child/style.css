@@ -333,8 +333,10 @@
           display: block;
           width: 16px;
           height: 16px;
-          top: 45px;
+          top: unset;
+          bottom: 75px;
           left: calc(50% - 8px);
+          position: fixed;
         }
       }
       @media (min-width: 769px) {
