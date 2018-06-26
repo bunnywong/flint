@@ -62,7 +62,7 @@ jQuery(document).ready(function ($) {
   }
 
   // check Safari
-  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
+  const isSafari = navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1
   if (isSafari) {
     $('body').addClass('is-safari')
   }
