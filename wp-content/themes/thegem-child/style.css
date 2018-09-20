@@ -802,7 +802,6 @@
       }
 
       @media (max-width: 767px) {
-        body.woocommerce-checkout .woocommerce-checkout-review-order-table,
         body.woocommerce-checkout footer#footer-nav,
         _ {
           display: none;
